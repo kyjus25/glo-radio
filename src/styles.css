@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #00FFE1;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #243540;
+  text-align: center;
+}
+
+.hidden {
+ visibility: hidden;
+ opacity: 0;
+ transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+.visible {
+ visibility: visible;
+ opacity: 1;
+ transition: opacity 0.3s linear;
+}
+
+
+app-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.fa-broadcast-tower {
+  position: absolute;
+  color: rgba(0,0,0,0.1);
+  font-size: 40vw;
+  bottom: calc(50vh - 20vw);
+  left: calc(50vw - 25vw);
+  z-index: -1;
+}
+
+body .ui-button,
+body .ui-button:enabled:focus {
+  background-color: #00FFE1;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.2s;
+  opacity: 1;
+  margin: 2vw;
+}
+
+body .large .ui-button {
+  padding: 0.5vw;
+  font-size: 4vw;
+  min-width: 40vw;
+}
+body .ui-button:enabled:hover {
+  opacity: 0.8;
+  background-color: #00FFE1;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+@keyframes ui-progress-spinner-color {
+  100%,
+  0% {
+    stroke: #00FFE1;
+  }
+  40% {
+    stroke: #00FFE1;
+  }
+  66% {
+    stroke: #00FFE1;
+  }
+  80%,
+  90% {
+    stroke: #00FFE1;
+  }
+}

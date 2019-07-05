@@ -1,0 +1,6 @@
+<div id="fade-container" class="hidden">
+  <h1>Select Board</h1>
+  <p-progressSpinner *ngIf="!boardOptions"></p-progressSpinner>
+  <p-dropdown [options]="boardOptions" [(ngModel)]="board" placeholder="Select a Board" *ngIf="boardOptions"></p-dropdown>
+  <p-button label="Continue" (click)="selectBoard()" *ngIf="boardOptions"></p-button>
+</div>
